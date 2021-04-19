@@ -1,0 +1,29 @@
+Copy and paste the code below into the "Custom Shaders" section of EDHM's Custom.ini file found in the elite-dangerous-64/EDHM-ini folder.
+
+;===== ----- Nate's Witchspace Lighting Effect for EDHM ----- =====
+; Adds a Witchspace effect where entering affects the ship's lights and hud, restoring them upon jump completion.
+[PresetWS]
+; Dim HUD to 0, y100 = 0
+        y100 = 0
+; Dim cabin lighting to 0, w103 = 0        
+        w103 = 0
+; Turn Explorer Mode ON, z108 = 1
+        z108 = 1
+		
+;===== ----- Witchspace Nebulae ----- =====		
+[ShaderOverride-3353041a15157f6b=skip+WS]
+; Witchspace, Dense clouds & Star clusters
+Hash = 3353041a15157f6b
+Preset = WS
+; Uncomment the line below (remove the semi-colon) to remove 'Dense clouds & Star clusters' from Witchspace
+;Handling = skip
+[ShaderOverride-7e6f3dfd1d817968=skip]
+; Witchspace, Whispy clouds
+Hash = 7e6f3dfd1d817968
+; Uncomment the line below (remove the semi-colon) to remove 'Whispy clouds' from Witchspace
+;Handling = skip
+[ShaderOverride-c8ae482fdce58501=skip]
+; Witchspace, Fissure clouds
+Hash = c8ae482fdce58501
+; Uncomment the line below (remove the semi-colon) to remove 'Fissure clouds' from Witchspace
+;Handling = skip
